@@ -14,7 +14,7 @@ public class ConectaBancoDados {
     public static Connection ConectaBancoDados() throws ClassNotFoundException {
             try{
             Class.forName("org.postgresql.Driver");
-            Connection conecta = DriverManager.getConnection("jdbc:postgresql://localhost:5432/projetoIntegrador","postgres","postgres");
+            Connection conecta = DriverManager.getConnection("jdbc:postgresql://localhost:5432/BD_Atividade_Cadastro","postgres","postgres");
             //JOptionPane.showMessageDialog(null, "Conectado com sucesso");
             return conecta;
         }

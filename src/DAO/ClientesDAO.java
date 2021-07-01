@@ -21,7 +21,7 @@ public class ClientesDAO {
         String sql = "INSERT INTO clientes (nome, rua, bairro, numero, cep, cidade, celular) "
                 + "VALUES (?,?,?,?,?,?,?)";
         PreparedStatement pst = ConectaBancoDados.getPreparedStatement(sql);
-
+        
         try {
 
             pst.setString(1, obj.getNome());
